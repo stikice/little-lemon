@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LittleLemon</string>
+    <string name="onboarding_title">Let\'s get to know you</string>
+    <string name="onboarding_info_title">Personal information</string>
 </resources>
