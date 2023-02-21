@@ -27,7 +27,8 @@ import com.example.littlelemon.ui.theme.LittleLemonColor
 fun Onboarding(navController: NavController) {
     val context = LocalContext.current
     val sharedPreferences = context.getSharedPreferences(
-        "LittleLemon.prefs", MODE_PRIVATE)
+        "LittleLemon.prefs", MODE_PRIVATE
+    )
     var firstName by remember {
         mutableStateOf("")
     }
@@ -76,9 +77,24 @@ fun Onboarding(navController: NavController) {
             verticalArrangement = Arrangement.SpaceEvenly,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            OutlinedTextField(singleLine = true, value = firstName, onValueChange = {firstName = it}, label = { Text(text = "First name") })
-            OutlinedTextField(singleLine = true, value = lastName, onValueChange = {lastName = it}, label = { Text(text = "Last name") })
-            OutlinedTextField(singleLine = true, value = email, onValueChange = {email = it}, label = { Text(text = "Email") })
+            OutlinedTextField(
+                singleLine = true,
+                value = firstName,
+                onValueChange = { firstName = it },
+                label = { Text(text = "First name") }
+            )
+            OutlinedTextField(
+                singleLine = true,
+                value = lastName,
+                onValueChange = { lastName = it },
+                label = { Text(text = "Last name") }
+            )
+            OutlinedTextField(
+                singleLine = true,
+                value = email,
+                onValueChange = { email = it },
+                label = { Text(text = "Email") }
+            )
         }
         Button(
             colors = ButtonDefaults.buttonColors(backgroundColor = LittleLemonColor.yellow),
@@ -87,8 +103,12 @@ fun Onboarding(navController: NavController) {
                 .fillMaxWidth()
                 .padding(16.dp),
             onClick = {
-                if(firstName.isBlank() || lastName.isBlank() || email.isBlank()){
-                    Toast.makeText(context, "Registration unsuccessful. Please enter all data.", Toast.LENGTH_SHORT).show()
+                if (firstName.isBlank() || lastName.isBlank() || email.isBlank()) {
+                    Toast.makeText(
+                        context,
+                        "Registration unsuccessful. Please enter all data.",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 } else {
                     Toast.makeText(context, "Registration successful!", Toast.LENGTH_SHORT).show()
                     sharedPreferences.edit()
@@ -96,7 +116,7 @@ fun Onboarding(navController: NavController) {
                         .putString("lastName", lastName)
                         .putString("email", email)
                         .apply()
-                    navController.navigate(Home.route)
+                    navController.navigate(com.example.littlelemon.navigation.Home.route)
                 }
             },
         ) {

@@ -2,4 +2,9 @@
     <string name="app_name">LittleLemon</string>
     <string name="onboarding_title">Let\'s get to know you</string>
     <string name="onboarding_info_title">Personal information</string>
+    <string name="upper_title">Little Lemon</string>
+    <string name="upper_location">Chicago</string>
+    <string name="upper_description">We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist</string>
+    <string name="upper_search_hint">Enter search phrase</string>
+    <string name="categories_title">ORDER FOR DELIVERY!</string>
 </resources>

@@ -71,7 +71,7 @@ fun Profile(navController: NavController) {
                 sharedPreferences.edit()
                     .clear()
                     .apply()
-                navController.navigate(Onboarding.route)
+                navController.navigate(com.example.littlelemon.navigation.Onboarding.route)
             },
         ) {
             Text(color = LittleLemonColor.charcoal, text = "Log out")
