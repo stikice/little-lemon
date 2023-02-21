@@ -131,7 +131,7 @@ fun Home(navController: NavHostController) {
 
         if (searchPhrase.isNotBlank()) {
             clicked = false
-            menuToShow = menuItems?.filter { it.title.lowercase().contains(searchPhrase) }.orEmpty()
+            menuToShow = menuItems?.filter { it.title.contains(searchPhrase, ignoreCase = true) }.orEmpty()
         }
 
         if (searchPhrase.isBlank() && !clicked) {

@@ -1,4 +1,4 @@
-package com.example.littlelemon
+package com.example.littlelemon.screen
 
 import android.content.Context
 import androidx.compose.foundation.Image
@@ -18,6 +18,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.example.littlelemon.R
 import com.example.littlelemon.ui.theme.LittleLemonColor
 
 @Composable

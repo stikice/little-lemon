@@ -1,4 +1,4 @@
-package com.example.littlelemon
+package com.example.littlelemon.screen
 
 import android.content.Context.MODE_PRIVATE
 import android.widget.Toast
@@ -21,6 +21,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.example.littlelemon.R
 import com.example.littlelemon.ui.theme.LittleLemonColor
 
 @Composable

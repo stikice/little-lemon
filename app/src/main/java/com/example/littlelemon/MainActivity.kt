@@ -12,6 +12,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.littlelemon.data.MenuDatabase
 import com.example.littlelemon.data.MenuItemNetwork
 import com.example.littlelemon.data.MenuNetwork
+import com.example.littlelemon.navigation.MyNavigation
 import com.example.littlelemon.ui.theme.LittleLemonTheme
 import io.ktor.client.*
 import io.ktor.client.call.*
